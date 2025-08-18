@@ -38,37 +38,6 @@ const PlaceOrder = () => {
     setFormData((data) => ({ ...data, [name]: value }));
   };
 
-  const initPay = (order) => {
-    const options = {
-      key: import.meta.env.VITE_RAZORPAY_KEY_ID,
-      amount: order.amount,
-      name: "Order Payment",
-      desscription: "Order Payment",
-      order_id: order.id,
-      receipt: order.receipt,
-      handler: async (response) => {
-        console.log(response);
-        try {
-          const { data } = await axios.post(
-            backendUrl + "/api/order/verifyRazorpay",
-            response,
-            { headers: { token } }
-          );
-          if (data.success) {
-            navigate("/orders");
-            setCartItems({});
-          }
-        } catch (error) {
-          console.log(error);
-          toast.error(error);
-        }
-      },
-    };
-
-    const rzp = new window.Razorpay(options);
-    rzp.open();
-  };
-
   const onSubmitHandler = async (event) => {
     event.preventDefault();
 
@@ -131,19 +100,6 @@ const PlaceOrder = () => {
           } else {
             toast.error(responseStripe.data.message);
           }
-          break;
-        }
-
-        case "razorpay": {
-          const responseRazorpay = await axios.post(
-            backendUrl + "/api/order/razorpay",
-            orderData,
-            { headers: { token } }
-          );
-          if (responseRazorpay.data.success) {
-            initPay(responseRazorpay.data.order);
-          }
-
           break;
         }
 
@@ -280,18 +236,6 @@ const PlaceOrder = () => {
                 }`}
               ></p>
               <img src={assets.stripe_logo} alt="stripe_logo" />
-            </div>
-
-            <div
-              onClick={() => setMethod("razorpay")}
-              className="flex items-center gap-3 border p-2 px-3 cursor-pointer"
-            >
-              <p
-                className={`min-w-3.5 h-3.5 border rounded-full ${
-                  method === "razorpay" ? "bg-green-400" : ""
-                }`}
-              ></p>
-              <img src={assets.razorpay_logo} alt="razorpay_logo" />
             </div>
 
             <div
