@@ -153,7 +153,7 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
-            to="http://localhost:5173/"
+            to="http://localhost:5174/"
           >
             Admin Panel
           </NavLink>
