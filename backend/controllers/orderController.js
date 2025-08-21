@@ -1,7 +1,6 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
 import Stripe from "stripe";
-// import Razorpay from "razorpay";
 
 // global variables
 const currency = "bdt"; // currency for the application
@@ -9,11 +8,6 @@ const deliveryCharges = 10;
 
 // gateway initialization
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-
-// const razorpayInstance = new Razorpay({
-//   key_id: process.env.RAZORPAY_KEY_ID,
-//   key_secret: process.env.RAZORPAY_KEY_SECRET,
-// });
 
 // for formatting date like "24-Jul-2025 07:45 PM"
 const formatDateTime = (date) => {

@@ -203,7 +203,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("S") ? "bg-pink-100" : "bg-slate-200"
+                sizes.includes("S") ? "bg-black text-white" : "bg-slate-200"
               } px-3 py-1 cursor-pointer`}
             >
               S
@@ -221,7 +221,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("M") ? "bg-pink-100" : "bg-slate-200"
+                sizes.includes("M") ? "bg-black text-white" : "bg-slate-200"
               } px-3 py-1 cursor-pointer`}
             >
               M
@@ -239,7 +239,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("L") ? "bg-pink-100" : "bg-slate-200"
+                sizes.includes("L") ? "bg-black text-white" : "bg-slate-200"
               } px-3 py-1 cursor-pointer`}
             >
               L
@@ -257,7 +257,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("XL") ? "bg-pink-100" : "bg-slate-200"
+                sizes.includes("XL") ? "bg-black text-white" : "bg-slate-200"
               } px-3 py-1 cursor-pointer`}
             >
               XL
@@ -275,7 +275,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("XXL") ? "bg-pink-100" : "bg-slate-200"
+                sizes.includes("XXL") ? "bg-black text-white" : "bg-slate-200"
               } px-3 py-1 cursor-pointer`}
             >
               XXL

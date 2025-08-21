@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Collection from './pages/Collection'
@@ -12,6 +11,7 @@ import Orders from './pages/Orders'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
+import Verify from "./pages/Verify";
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
         <Route path='/login' element={<Login/>} />
         <Route path='/place-order' element={<PlaceOrder/>} />
         <Route path='/orders' element={<Orders/>} />
+        <Route path="/verify" element={<Verify />} />
       </Routes>
       <Footer/>
     </div>

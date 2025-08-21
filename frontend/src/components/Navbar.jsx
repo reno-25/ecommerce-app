@@ -48,7 +48,7 @@ const Navbar = () => {
 
         <NavLink
           target="_blank"
-          to="http://localhost:5173/"
+          to="http://localhost:5174/add"
           className="flex flex-col items-center gap-1 border px-5 text-sm py-1 rounded-full -mt-1"
         >
           Admin Panel
@@ -153,7 +153,7 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 pl-6 border"
-            to="http://localhost:5174/"
+            to="http://localhost:5174/add"
           >
             Admin Panel
           </NavLink>
