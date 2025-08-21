@@ -9,8 +9,6 @@ This is a production-ready e-commerce solution featuring a beautiful customer-fa
 ## 🎯 Live Demo
 
 - **Customer Storefront**: [Live Demo](https://ecommerce-moreno.vercel.app/)
-- **Admin Dashboard**: [Admin Panel](https://ecommerce-admin-ten-umber.vercel.app/)
-- **API Documentation**: [Backend API](https://ecommerce-backend-dun-two.vercel.app/)
 
 ## 🏗️ Architecture Overview
 
