@@ -9,6 +9,8 @@ This is a production-ready e-commerce solution featuring a beautiful customer-fa
 ## 🎯 Live Demo
 
 - **Customer Storefront**: [Live Demo](https://ecommerce-moreno.vercel.app/)
+- **Admin**:admin@company.com
+- **Password Admin**:Qwerty123
 
 ## 🏗️ Architecture Overview
 
