@@ -1,23 +1,21 @@
-# 🛍️ TrendyCart - Modern Full-Stack E-Commerce Platform
+# 🛍️ Modern Full-Stack E-Commerce Platform
 
-Welcome to **TrendyCart**, a cutting-edge e-commerce platform built with the MERN stack that delivers a seamless shopping experience from discovery to delivery.
-
-![TrendyCart Banner](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=400&fit=crop)
+Welcome to **E-commerce Project**, a cutting-edge e-commerce platform built with the MERN stack that delivers a seamless shopping experience from discovery to delivery.
 
 ## 🌟 Project Overview
 
-TrendyCart is a production-ready e-commerce solution featuring a beautiful customer-facing storefront, a comprehensive admin dashboard, and a robust backend API. The platform supports modern shopping features including real-time cart management, secure payments, order tracking, and inventory management.
+This is a production-ready e-commerce solution featuring a beautiful customer-facing storefront, a comprehensive admin dashboard, and a robust backend API. The platform supports modern shopping features including real-time cart management, secure payments, order tracking, and inventory management.
 
 ## 🎯 Live Demo
 
-- **Customer Storefront**: [Live Demo](https://your-frontend-url.vercel.app)
-- **Admin Dashboard**: [Admin Panel](https://your-admin-url.vercel.app)
-- **API Documentation**: [Backend API](https://your-backend-url.vercel.app/api-docs)
+- **Customer Storefront**: [Live Demo](https://ecommerce-moreno.vercel.app/)
+- **Admin Dashboard**: [Admin Panel](https://ecommerce-admin-ten-umber.vercel.app/)
+- **API Documentation**: [Backend API](https://ecommerce-backend-dun-two.vercel.app/)
 
 ## 🏗️ Architecture Overview
 
 ```
-📦 TrendyCart/
+📦 Ecommerce/
 ├── 🎨 Frontend (Customer Store)
 ├── 🎛️ Admin Dashboard
 ├── ⚙️ Backend API
