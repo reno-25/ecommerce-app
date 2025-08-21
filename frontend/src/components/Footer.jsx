@@ -36,7 +36,7 @@ const Footer = () => {
       <div>
         <hr />
         <p className="py-5 text-sm text-center ">
-          Copyright 2025@ ecommerce.com - All Right Reserved by{" "}
+          Copyright 2025@ ecommerce.com - All Right Reserved by
           <a href="https://www.linkedin.com/in/moreno-ryadi-395b89289/">
             Moreno Ryadi
           </a>

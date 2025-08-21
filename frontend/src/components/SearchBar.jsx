@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 import { ShopContext } from "../context/ShopContext";
 import { useLocation } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 const SearchBar = () => {
   const { search, setSearch, showSearch, setShowSearch } =
     useContext(ShopContext);
-  const [visible, setVisible] = React.useState(false);
+  const [visible, setVisible] = useState(false);
   const location = useLocation();
 
   useEffect(() => {

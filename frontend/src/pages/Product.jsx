@@ -6,22 +6,21 @@ import RelatedProducts from "../components/RelatedProducts";
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency } = useContext(ShopContext);
+  const { products, currency, addToCart } = useContext(ShopContext);
   const [productData, setProductData] = useState(false);
   const [image, setImage] = useState("");
   const [size, setSize] = useState("");
 
-  const fetchProductData = async () => {
-    products.map((item) => {
-      if (item._id === productId) {
-        setProductData(item);
-        setImage(item.image[0]);
-        return null;
-      }
-    });
-  };
-
   useEffect(() => {
+    const fetchProductData = async () => {
+      products.map((item) => {
+        if (item._id === productId) {
+          setProductData(item);
+          setImage(item.image[0]);
+          return null;
+        }
+      });
+    };
     fetchProductData();
   }, [productId, products]);
 
@@ -56,7 +55,7 @@ const Product = () => {
             <img src={assets.star_icon} alt="" className="w-3 5" />
             <img src={assets.star_icon} alt="" className="w-3 5" />
             <img src={assets.star_dull_icon} alt="" className="w-3 5" />
-            <p className="pl-2"></p>
+            <p className="pl-2">(122)</p>
           </div>
           <p className="mt-5 text-3xl font-medium">
             {currency}
